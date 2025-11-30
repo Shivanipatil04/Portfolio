@@ -1,0 +1,42 @@
+.floating-menu {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: #b06fff;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+  transition: 0.3s;
+}
+
+.menu-panel {
+  position: fixed;
+  top: 80px;
+  right: -200px;
+  width: 160px;
+  background: #151521;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: 0.4s ease;
+  z-index: 998;
+}
+
+.menu-panel.open {
+  right: 30px;
+}
+
+.menu-panel a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu-panel a:hover {
+  color: #b06fff;
+  transform: translateX(4px);
+}
